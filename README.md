@@ -66,7 +66,7 @@ INSERT INTO shop.order_items (product_id, order_id, amount) VALUES ('3', '4', '2
 
 
 # 3. Вывести все заказы для заданного ID курьера
-SELECT x.FIO, x.address, p.name, oi.amount, p.priceoi.amount as Sum, c.name
+SELECT x.FIO, x.address, p.name, oi.amount, p.price*oi.amount as Sum, c.name
 FROM shop.orders as x  
 
 join shop.couriers as c  
