@@ -1,6 +1,6 @@
 # Создание таблицы продуктов
 
-CREATE TABLE `products` (
+CREATE TABLE `products` (  
    `id` int NOT NULL AUTO_INCREMENT,
    `name` varchar(45) NOT NULL,
    `price` decimal(5,2) NOT NULL,
